@@ -1,0 +1,138 @@
+body{
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.title{
+  display: flex;
+  background-color: rgb(29, 29, 78);
+  justify-content: center;
+  font-size: 40px;
+  padding: 50px;
+  color: rgb(135, 209, 209);
+}
+.pointResults{
+  padding: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
+}
+.choice{
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4%;
+}
+.weaponText{
+  margin: 0;
+  font-size: 35px;
+  color: rgb(135, 209, 209);
+}
+.player, .computer{
+  text-align: center;
+}
+.choiceGround{
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+#choice1, #choice2, #choice3, .playerChoice, .computerChoice{
+  width: 150px;
+  height: 150px;
+}
+#questionMark{
+  width: 150px;
+  height: 150px;
+}
+#paper, #rock, #scissors{
+  width: 150px;
+  height: 150px;
+  border: solid rgb(1, 0, 5);
+}
+.playGround{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: rgb(44, 61, 94);
+}
+.result{
+  font-size: 50px;
+  color: rgb(175, 204, 44);
+}
+.textAbove{
+  text-align: center;
+  color: rgb(135, 209, 209);
+  font-size: 20px;
+}
+#popup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10%;
+  position: fixed;
+  border-radius: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  height: 200px;
+  max-height: 50%;
+  width: 450px;
+  max-width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 10;
+  background-color: rgb(30, 134, 194);
+}
+#popup.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+.whoWon{
+  font-size: 50px;
+  text-align: center;
+  margin: 30px;
+}
+.btn{
+  text-align: center;
+  color: rgb(192, 209, 43);
+  width: 30%;
+  max-width: 50%;
+  height: 20%;
+  border-radius: 20px;
+  background-color: rgb(42, 49, 54);
+  border: 0;
+}
+#popupOverlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+  pointer-events: none;
+}
+#popupOverlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+.footer{
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(44, 61, 94);
+  color: rgb(135, 209, 209);
+}
+
+.btn:hover{
+  transition: .5s;
+  background-color: rgb(75, 88, 97);
+  cursor: pointer;
+}
+#paper:hover,#rock:hover,#scissors:hover {
+  cursor: pointer;
+  width: 155px;
+  height: 155px;
+  border: solid rgb(26, 216, 200);
+}

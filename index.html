@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="title">
+    Rock Paper Scissors
+  </div>
+  <div class="playGround">
+    <div class="pointResults">
+      <div class="player">
+        <p class="textAbove">Player</p>
+        <div class="playerChoice"></div>
+      </div>
+      <div class="result" id="Result">
+        <p class="textAbove">Score</p>
+      </div>
+      <div class="computer">
+        <p class="textAbove">Computer</p>
+        <div class="computerChoice"></div>
+      </div>
+    </div>
+    <div class="choice">
+      <div class="result">
+        <p class="weaponText">Choose your weapon!</p>
+      </div>
+      <div class="choiceGround">
+      <div id="choice1"><img id="rock" src="img/rock.png"></div>
+      <div id="choice2"><img id="paper" src="img/paper.png"></div>
+      <div id="choice3"><img id="scissors" src="img/scissors.png"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">Copyright © 2023 Krzysztof Cybulski</div>
+  <div id="popup">
+    <div><p class="whoWon" id="whoWon"></p></div>
+    <button class="btn" id="btn">Play Again</button>
+  </div>
+  <div id="popupOverlay"></div>
+  <script src="JavaScript.js"></script>
+</body>
+</html>
+
