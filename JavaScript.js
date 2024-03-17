@@ -158,10 +158,10 @@ function startChecker(){
 }
 function whoWonPopup(){
     if(playerPointsCounter == 5){
-        whoWon.textContent = 'You Won!'
+        whoWon.textContent = 'You Win!'
     }
     else{
-        whoWon.textContent = 'You Lost!'
+        whoWon.textContent = 'You Lose!'
     }
 }
 
@@ -184,17 +184,17 @@ function playGround(computerSelection, playerSelection)
     {
         if(computerSelection == "paper") return "You Lose!";
         else if(computerSelection == "rock") return "Draw!";
-        else if(computerSelection == "scissors") return "You Won!";
+        else if(computerSelection == "scissors") return "You Win!";
     }
     else if(playerSelection == "paper")
     {
         if(computerSelection == "paper") return "Draw!";
-        else if(computerSelection == "rock") return "You Won!";
+        else if(computerSelection == "rock") return "You Win!";
         else if(computerSelection == "scissors") return "You Lose!";
     }
     else if(playerSelection == "scissors")
     {
-        if(computerSelection == "paper") return "You Won!";
+        if(computerSelection == "paper") return "You Win!";
         else if(computerSelection == "rock") return "You Lose!";
         else if(computerSelection == "scissors") return "Draw!";
     }
@@ -209,7 +209,7 @@ function game(computerSelection, playerSelection)
     computerSelection = computerChoice()
     if(playerPointsCounter < 5 && computerPointsCounter < 5)
     {
-    if(playGround(computerSelection, playerSelection) == "You Won!") playerPointsCounter++
+    if(playGround(computerSelection, playerSelection) == "You Win!") playerPointsCounter++
     if(playGround(computerSelection, playerSelection) == "You Lose!") computerPointsCounter++
     else{onGame = true}
     }
