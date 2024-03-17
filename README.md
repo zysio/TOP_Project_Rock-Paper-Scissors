@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors application
+# Rock Paper Scissors
 
 ![alt text](img/web0.png)
 
